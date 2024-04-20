@@ -86,7 +86,7 @@ namespace Projectweb1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Cedula,Nombre,Apellido,Correo")] Empleado empleado)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Cedula,Nombre,Apellido,Correo,Departamento,Posicion,Sueldo,Telefono,Horario")] Empleado empleado)
         {
             if (id != empleado.Id)
             {
